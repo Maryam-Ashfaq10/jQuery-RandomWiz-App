@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     $(".continue-button").click(function() {
         
-        $(this).text("Clicked!");
+        $(this).hide();
+        $('#options').show();
     });
 });
