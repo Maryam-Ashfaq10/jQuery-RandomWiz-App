@@ -13,7 +13,7 @@ $(document).ready(function() {
             case 1:
                 // Handle Random Number
                 const randomNumber = Math.floor(Math.random() * 100) + 1; // Generates a number between 1 and 100
-                alert(randomNumber); // Display the number
+                alert(randomNumber);
                 break;
             case 2:
                 // Handle Random Name
@@ -25,7 +25,8 @@ $(document).ready(function() {
                 break;
             case 4:
                 // Handle Random Color
-                console.log('Random Color selected');
+                const randomColor = getRandomColor();
+                alert(randomColor) ; 
                 break;
             case 5:
                 // Handle Random Facts
@@ -39,4 +40,11 @@ $(document).ready(function() {
                 console.log('Unknown option selected');
         }
     });
+
+    function getRandomColor() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+    }
 });
