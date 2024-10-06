@@ -42,7 +42,9 @@ $(document).ready(function () {
                 break;
             case 6:
                 // Handle Random Places
-                console.log('Random Places selected');
+                const placesIndex = Math.floor(Math.random() * places.length);
+                const randomPlace = places[placesIndex];
+                alert(randomPlace);
                 break;
             default:
                 console.log('Unknown option selected');
@@ -87,5 +89,19 @@ $(document).ready(function () {
         "Wombat poop is cube-shaped.",
         "Cows have best friends.",
         "The Eiffel Tower can be 15 cm taller during the summer."
+    ];
+
+    places = [
+        "Paris, France",
+        "Tokyo, Japan",
+        "New York, USA",
+        "Sydney, Australia",
+        "Cairo, Egypt",
+        "Rome, Italy",
+        "Rio de Janeiro, Brazil",
+        "Cape Town, South Africa",
+        "Moscow, Russia",
+        "Beijing, China",
+        "Islamabad, Pakistan"
     ];
 });
