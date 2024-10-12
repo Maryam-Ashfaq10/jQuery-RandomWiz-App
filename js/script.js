@@ -71,6 +71,14 @@ $(document).ready(function () {
         {
             text: "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
             author: "Ralph Waldo Emerson"
+        },
+        {
+            text: "Your time is limited, so don’t waste it living someone else’s life.",
+            author: "Steve Jobs"
+        },
+        {
+            text: "The only thing worse than being blind is having sight but no vision.",
+            author: "Helen Keller:"
         }
     ];
 
@@ -86,9 +94,11 @@ $(document).ready(function () {
         "Bananas are berries, but strawberries aren't.",
         "A group of flamingos is called a 'flamboyance.'",
         "Octopuses have three hearts.",
-        "Wombat poop is cube-shaped.",
+        "Sloths can hold their breath longer than dolphins.",
         "Cows have best friends.",
-        "The Eiffel Tower can be 15 cm taller during the summer."
+        "The Eiffel Tower can be 15 cm taller during the summer.",
+        "A day on Venus is longer than a year on Venus.",
+        "Goldfish can see both infrared and ultraviolet light."
     ];
 
     places = [
