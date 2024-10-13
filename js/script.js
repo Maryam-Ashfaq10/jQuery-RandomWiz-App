@@ -1,6 +1,7 @@
 let facts;
 let quotes;
 let places;
+let animals;
 
 $(document).ready(function () {
 
@@ -20,8 +21,10 @@ $(document).ready(function () {
                 alert(randomNumber);
                 break;
             case 2:
-                // Handle Random Name
-                console.log('Random Name selected');
+                // Handle Random Animal
+                const animalIndex = Math.floor(Math.random() * animals.length);
+                const randomAnimal = animals[animalIndex];        
+                alert(randomAnimal);
                 break;
             case 3:
                 // Handle Random Quote
@@ -50,6 +53,12 @@ $(document).ready(function () {
                 console.log('Unknown option selected');
         }
     });
+
+    animals = [
+        "Lion", "Tiger", "Bear", "Elephant", "Giraffe",
+        "Zebra", "Kangaroo", "Panda", "Koala", "Penguin",
+        "Dolphin", "Eagle", "Shark", "Wolf", "Fox", "Cheetah"
+    ];
 
     quotes = [
         {
