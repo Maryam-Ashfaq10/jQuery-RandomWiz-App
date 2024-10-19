@@ -16,15 +16,14 @@
 <body>
     <h1 class="text-center p-3">WELCOME USER!</h1>
     <h4 class="text-center p-3">This is <mark>RANDOM WIZ</mark>.</h4>
-    <h4 class="text-center">Where You Generate Randomly</h4>
+    <h4 class="text-center"><u>Where You Generate Randomly</u></h4>
 
 
     <div class="container-fluid full-height d-flex justify-content-center align-items-center">
         <button type="button" class="btn btn-primary continue-button">CONTINUE</button>
     </div>
 
-    <div id="options">
-
+    <div id="options" class="text-center">
         <h4 class="p-3">Choose from below options</h4>
         <div class="btn-group-vertical" role="group" aria-label="Options">
             <button type="button" class="btn btn-primary m-2 option-btn" data-option="1">Random Number</button>
@@ -34,7 +33,14 @@
             <button type="button" class="btn btn-primary m-2 option-btn" data-option="5">Random Facts</button>
             <button type="button" class="btn btn-primary m-2 option-btn" data-option="6">Random Places</button>
         </div>
-        
+    </div>
+
+    <div id="result" style="display: none;" class="text-center pt-2">
+        <h5></h5>
+        <p></p>
+
+        <button type="button" class="btn btn-primary back-button">Back</button>
+
     </div>
 
 

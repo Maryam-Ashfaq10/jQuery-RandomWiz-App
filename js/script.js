@@ -18,40 +18,54 @@ $(document).ready(function () {
             case 1:
                 // Handle Random Number
                 const randomNumber = Math.floor(Math.random() * 100) + 1; // Generates a number between 1 and 100
-                alert(randomNumber);
+                $('#result h5').text("Random Number:"); 
+                $('#result p').text(randomNumber);
                 break;
             case 2:
                 // Handle Random Animal
                 const animalIndex = Math.floor(Math.random() * animals.length);
-                const randomAnimal = animals[animalIndex];        
-                alert(randomAnimal);
+                const randomAnimal = animals[animalIndex];
+                $('#result h5').text("Random Animal:"); 
+                $('#result p').text(randomAnimal);
                 break;
             case 3:
                 // Handle Random Quote
                 const quoteIndex = Math.floor(Math.random() * quotes.length);
                 const randomQuote = quotes[quoteIndex];
-                alert(`${randomQuote.text} — ${randomQuote.author}`);
+                $('#result h5').text("Random Quote:"); 
+                $('#result p').text(`${randomQuote.text} — ${randomQuote.author}`);
                 break;
             case 4:
                 // Handle Random Color
                 const randomColor = getRandomColor();
-                alert(randomColor);
+                $('#result h5').text("Random Color:"); 
+                $('#result p').text(randomColor);
                 break;
             case 5:
-                // Handle Random Facts
+                // Handle Random Fact
                 const factIndex = Math.floor(Math.random() * facts.length);
                 const randomFact = facts[factIndex];
-                alert(randomFact);
+                $('#result h5').text("Random Fact:"); 
+                $('#result p').text(randomFact);
                 break;
             case 6:
                 // Handle Random Places
                 const placesIndex = Math.floor(Math.random() * places.length);
                 const randomPlace = places[placesIndex];
-                alert(randomPlace);
+                $('#result h5').text("Random Place:"); 
+                $('#result p').text(randomPlace);
                 break;
             default:
-                console.log('Unknown option selected');
+                alert('Unknown option selected');
         }
+        $('#result').show();
+        $('#options').hide();
+    });
+
+    $(".back-button").click(function () {
+
+        $('#result').hide();
+        $('#options').show();
     });
 
     animals = [
